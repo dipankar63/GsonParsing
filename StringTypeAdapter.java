@@ -8,8 +8,7 @@ import com.google.gson.stream.JsonWriter;
 
 public class StringTypeAdapter {
 	/*
-	 * StringToIntegerAdapter - To handle Runtime Exception by returning 0 /
-	 * null
+	 * TypeAdapterEnum - Enum type to hold all types of Adapter /
 	 */
 	
 	public enum TypeAdapterEnum{
@@ -32,7 +31,10 @@ public class StringTypeAdapter {
 		
 	}
 	
-	
+	/*
+	 * StringToIntegerAdapter - To handle Runtime Exception by returning 0 /
+	 * null
+	 */
 	
 	public static class StringToIntegerAdapter extends TypeAdapter<Number> {
 		private boolean mIsPrimitive;
